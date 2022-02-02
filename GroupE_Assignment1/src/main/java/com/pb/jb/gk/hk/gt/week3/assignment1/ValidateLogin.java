@@ -1,5 +1,5 @@
 package com.pb.jb.gk.hk.gt.week3.assignment1;
-/** ValidateLogin validates the data coming from Index.html file. 
+/** ValidateLogin validates the data coming from login.html file. 
 If the password is correct the data is transfered to the Next servlet.
 
  * Servlet implementation class FinalServlet

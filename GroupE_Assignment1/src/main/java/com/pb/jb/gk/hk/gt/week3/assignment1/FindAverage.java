@@ -1,5 +1,5 @@
 package com.pb.jb.gk.hk.gt.week3.assignment1;
-// FindAverageServlet take the data anad find the average, minimum and maximum scores given by user.
+// FindAverageServlet take the data and find the average, minimum and maximum scores given by user.
 // In this we use the session approach. Data is then sent to the FinalServlet.
 /**
  * @ Harpreet Kaur

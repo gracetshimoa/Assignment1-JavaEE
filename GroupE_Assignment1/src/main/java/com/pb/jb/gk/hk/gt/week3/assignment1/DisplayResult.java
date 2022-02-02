@@ -1,6 +1,6 @@
 package com.pb.jb.gk.hk.gt.week3.assignment1;
 /**
- * @ Grace Tashimoa
+ * @ Grace Tshimoa
  *  @ 31-01-2022 
 **/
 import java.io.IOException;
