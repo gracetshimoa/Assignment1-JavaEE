@@ -67,7 +67,7 @@ public class StudentScoreServlet extends HttpServlet {
 		  +"<input type=\'text\' name=\'score4\' >"
 		  +"<br><label for='score5'> Subject 5 Score </label>"	
 		  +"<input type=\'text\' name=\'score5\' >"
-		  +"<br><input type='submit' value='Calculate Average'/>"+
+		  +"<br><br><input type='submit' value='Calculate Average'/>"+
 		  "</form>" + "</div>");
 		out.close();
 	} catch(Exception e)

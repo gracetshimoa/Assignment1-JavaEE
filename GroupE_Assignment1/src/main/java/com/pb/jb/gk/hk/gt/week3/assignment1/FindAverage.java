@@ -52,7 +52,7 @@ public class FindAverage extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		response.setContentType("text/html");
-		double score1, score2, score3,score4,score5, total, avg;
+		double score1, score2, score3,score4,score5, total, avg, grade;
 		String name = request.getParameter("studentName");
 		score1 = Double.parseDouble(request.getParameter("score1"));
 		score2 = Double.parseDouble(request.getParameter("score2"));
@@ -63,7 +63,10 @@ public class FindAverage extends HttpServlet {
 		avg = (total/5.0) ;
 		String avgScore =(String.valueOf(avg));
 		
+		request.setAttribute("avgGrade", avg);
+		
 		double[] scores ={score1,score2,score3,score4,score5};
+		//We use arrays.sort method to find the minimum and maximum
 		Arrays.sort(scores);
 		double min = scores[0];
 		double max = scores[scores.length-1];
@@ -73,11 +76,14 @@ public class FindAverage extends HttpServlet {
 		Cookie c2 = new Cookie("avg", avgScore);
 		Cookie c3 = new Cookie("max", String.valueOf(max));
 		Cookie c4 = new Cookie("min", String.valueOf(min));
+	    
+		
 		
 		response.addCookie(c1);
 		response.addCookie(c2);
 		response.addCookie(c3);
 		response.addCookie(c4);
+		
 		
 		RequestDispatcher r1 = request.getRequestDispatcher("DisplayResult");
 		r1.forward(request,  response);
