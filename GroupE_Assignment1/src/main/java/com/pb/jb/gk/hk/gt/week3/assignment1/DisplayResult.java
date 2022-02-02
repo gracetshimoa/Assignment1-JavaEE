@@ -43,7 +43,7 @@ public class DisplayResult extends HttpServlet {
 			out.println("Minimum Score :" +cs[3].getValue() + "<br>");
 			
 			out.println("<form action='FinalServlet' method='post'>");			
-			out.println("<input type='submit' value='Last Page'> </form>");			
+			out.println("<input type='submit' value='Go to Last Page'> </form>");			
 			out.close();
 			}
 			catch (Exception e)
